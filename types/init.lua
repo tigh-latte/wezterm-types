@@ -101,6 +101,8 @@
 
 ---@alias Dimension Points | Pixels | Percent | Cells
 
+---@alias AudibleBell "SystemBeep" | "Disabled"
+
 ---@class TabBarColor
 -- The color of the background area for the tab
 ---@field bg_color string
