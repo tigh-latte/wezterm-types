@@ -101,11 +101,33 @@
 
 ---@alias Dimension Points | Pixels | Percent | Cells
 
+---@alias DefaultCursorStyle
+---| "SteadyBlock"
+---| "BlinkingBlock"
+---| "SteadyUnderline"
+---| "BlinkingUnderline"
+---| "SteadyBar"
+---| "BlinkingBar"
+
 ---@alias AudibleBell "SystemBeep" | "Disabled"
 
----@alias SteadyCursorStyles "SteadyBlock" | "SteadyUnderline" | "SteadyBar"
----@alias BlinkingCursorStyles "BlinkingBlock" | "BlinkingUnderline" | "BlinkingBar"
----@alias DefaultCursorStyle SteadyCursorStyles | BlinkingCursorStyles
+---@class VisualBell
+---@field fade_in_function? EasingFunction|CubicFunction
+---@field fade_out_function? EasingFunction|CubicFunction
+---@field fade_in_duration_ms? integer
+---@field fade_out_duration_ms? integer
+---@field target? "BackgroundColor"| "CursorColor"
+
+---@alias EaseInFunction
+---| "Linear"
+---| "Ease"
+---| "EaseIn"
+---| "EaseInOut"
+---| "EaseOut"
+---| "Constant"
+
+---@class CubicFunction
+---@field CubicBezier integer[]
 
 ---@class TabBarColor
 -- The color of the background area for the tab
