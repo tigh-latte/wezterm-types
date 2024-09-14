@@ -103,6 +103,10 @@
 
 ---@alias AudibleBell "SystemBeep" | "Disabled"
 
+---@alias SteadyCursorStyles "SteadyBlock" | "SteadyUnderline" | "SteadyBar"
+---@alias BlinkingCursorStyles "BlinkingBlock" | "BlinkingUnderline" | "BlinkingBar"
+---@alias DefaultCursorStyle SteadyCursorStyles | BlinkingCursorStyles
+
 ---@class TabBarColor
 -- The color of the background area for the tab
 ---@field bg_color string
