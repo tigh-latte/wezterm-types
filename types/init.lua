@@ -141,28 +141,28 @@
 ---@alias ColorSpec table<AC, AnsiColors> | table<CO, string>
 
 ---@class Palette
----@field foreground string The text color to use when the attributes are reset to default
----@field background string  The background color to use when the attributes are reset to default
----@field cursor_fg string  The color of the cursor
----@field cursor_bg string  The color of the cursor
----@field cursor_border string  The color of the cursor
----@field selection_fg string  The color of selected text
----@field selection_bg string  The color of selected text
----@field ansi string[]  A list of 8 colors corresponding to the basic ANSI palette
----@field brights string[] A list of 8 colors corresponding to bright versions of the
----@field indexed { [number]: string } A map for setting arbitrary colors ranging from 16 to 256 in the color palette
----@field scrollbar_thumb string The color of the "thumb" of the scrollbar; the segment that represents the current viewable area
----@field split string The color of the split line between panes
----@field visual_bell string The color of the visual bell. If unspecified, the foreground color is used instead.
----@field compose_cursor string The color to use for the cursor when a dead key or leader state is active
----@field copy_mode_active_highlight_fg ColorSpec
----@field copy_mode_active_highlight_bg ColorSpec
----@field copy_mode_inactive_highlight_fg ColorSpec
----@field copy_mode_inactive_highlight_bg ColorSpec
----@field quick_select_label_fg ColorSpec
----@field quick_select_label_bg ColorSpec
----@field quick_select_match_fg ColorSpec
----@field quick_select_match_bg ColorSpec
+---@field foreground? string The text color to use when the attributes are reset to default
+---@field background? string  The background color to use when the attributes are reset to default
+---@field cursor_fg? string  The color of the cursor
+---@field cursor_bg? string  The color of the cursor
+---@field cursor_border? string  The color of the cursor
+---@field selection_fg? string  The color of selected text
+---@field selection_bg? string  The color of selected text
+---@field ansi? string[]  A list of 8 colors corresponding to the basic ANSI palette
+---@field brights? string[] A list of 8 colors corresponding to bright versions of the
+---@field indexed? { [number]: string } A map for setting arbitrary colors ranging from 16 to 256 in the color palette
+---@field scrollbar_thumb? string The color of the "thumb" of the scrollbar; the segment that represents the current viewable area
+---@field split? string The color of the split line between panes
+---@field visual_bell? string The color of the visual bell. If unspecified, the foreground color is used instead.
+---@field compose_cursor? string The color to use for the cursor when a dead key or leader state is active
+---@field copy_mode_active_highlight_fg? ColorSpec
+---@field copy_mode_active_highlight_bg? ColorSpec
+---@field copy_mode_inactive_highlight_fg? ColorSpec
+---@field copy_mode_inactive_highlight_bg? ColorSpec
+---@field quick_select_label_fg? ColorSpec
+---@field quick_select_label_bg? ColorSpec
+---@field quick_select_match_fg? ColorSpec
+---@field quick_select_match_bg? ColorSpec
 local Palette = {
 	---@class TabBar :TabBarColors
 	--  Configure the color and styling for the tab bar
