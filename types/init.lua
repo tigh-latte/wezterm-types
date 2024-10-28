@@ -339,8 +339,8 @@ local FontAttributes = {
 
 ---@class GpuInfo
 ---@field name String
----@field device_type String
----@field backend String
+---@field device_type "DiscreteGpu"|"IntegratedGpu"|"Cpu"|"Other"
+---@field backend "Vulkan"|"Gl"
 ---@field driver String
 ---@field driver_info String
 ---@field vendor u32
